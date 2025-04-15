@@ -470,7 +470,7 @@ const DateField: IFormFieldComponentProps<IDateInstance, string> = ({
       isRequired={required}
       label={label}
       size={size}
-      value={parsedValue}
+      value={parsedValue as any}
       onChange={handleChange}
     />
   );
