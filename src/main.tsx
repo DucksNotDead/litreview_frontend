@@ -7,7 +7,6 @@ import { App } from "@/App.tsx";
 import { QueryProvider } from "@/providers/QueryProvider.tsx";
 import { UIKitProvider } from "@/providers/UIKitProvider.tsx";
 import { AccountProvider } from "@/providers/AccountProvider.tsx";
-import { ModalsProvider } from "@/providers/ModalsProvider.tsx";
 import { FiltersProvider } from "@/providers/FiltersProvider.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -17,9 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <QueryProvider>
           <AccountProvider>
             <FiltersProvider>
-              <ModalsProvider>
-                <App />
-              </ModalsProvider>
+              <App />
             </FiltersProvider>
           </AccountProvider>
         </QueryProvider>
